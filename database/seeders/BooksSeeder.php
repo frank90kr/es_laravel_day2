@@ -14,7 +14,7 @@ class BooksSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 30; $i++) {
             DB::table('books')->insert([
                 'title' =>fake()->words(rand(3, 5), true),
                 'price' => rand(100, 200),
